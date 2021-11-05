@@ -1,0 +1,5 @@
+FROM busybox
+COPY *.sh /
+RUN chmod +x *.sh
+ENV META_CMS_TASK_WORKSPACE_DIR=/workdir
+ENV META_CMS_TASK_WORKSPACE_MTIME=+7
