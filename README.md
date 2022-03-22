@@ -1,4 +1,4 @@
-#Meta-CMS-Housekeep
+# Meta-CMS-Housekeep
 
 Regularly clean up task workspaces.
 
@@ -21,3 +21,7 @@ docker run  -it -v /var/tmp/docker-cms-be:/workdir metaio/meta-cms-housekeep /bi
 # Custom WORKSPACE_DIR&MTIME,clean
 docker run  -it -v /var/tmp/docker-cms-be:/workspaces -e META_CMS_TASK_WORKSPACE_DIR="/workspaces" -e META_CMS_TASK_WORKSPACE_MTIME="+14" metaio/meta-cms-housekeep /bin/sh clean.sh
 ```
+
+## License
+
+[MIT License](LICENSE)
